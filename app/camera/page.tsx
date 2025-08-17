@@ -72,7 +72,8 @@ export default function CameraPage() {
           <img src={photoUrl} alt="photo" className="w-full max-w-md rounded-2xl border" />
           <a
             href={photoUrl}
-            download={`photo-${int(__import__('time').time())}.png`}
+            download={`photo-${Date.now()}.png`}
+
             className="inline-block px-4 py-2 rounded-xl border hover:shadow"
           >
             Скачать PNG
